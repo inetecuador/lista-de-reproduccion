@@ -1,0 +1,80 @@
+.contenedorPrincipal {
+    background-color: grey;
+    width: 1000px;
+    padding: 10px;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 20px;
+    grid-template-columns: 490px 490px;
+}
+
+.contenedorPrincipal>div {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.cabecera {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.catalogo {
+    height: calc(100%);
+}
+
+.favoritos {
+    /* height: 20vh; */
+}
+
+.reproductor {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.listaDeReproduccion {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.informacion {
+    height: calc(100% - 40px);
+    text-align: center;
+}
+
+#imagenListaInformacion{
+    height: 250px;
+    width: 350px;
+    border:1px black solid;
+    margin:auto;
+    display: block;
+}
+.controles {
+    font-size: 40px;
+    height: 40px;
+    background-color: darkgrey;
+}
+
+.cabeceraPanel {
+    height: 3vh;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: darkgray;
+}
+.listaPanel {
+    height: 37vh;
+    overflow:auto;
+    text-align:left;
+}
+
+.listaPanel div {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: auto 20px 20px 20px ;
+    grid-column-gap: 5px;
+    margin: 10px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="contenedorPrincipal">
+        <h1 class="cabecera">Reproductor de música</h1>
+        <div class="catalogo">
+            <div class="panel">
+                <div class="cabeceraPanel">Catálogo de canciones <i class="bi bi-collection-play" id="botonReproducirListaCanciones"></i></div>
+                <div class="listaPanel" id="listaCanciones"></div>
+            </div>
+        </div>
+        <div class="favoritos">
+            <div class="panel">
+                <div class="cabeceraPanel">Favoritos <i class="bi bi-collection-play" id="botonReproducirListaFavoritos"></i></div>
+                <div class="listaPanel" id="listaFavoritos"></div>
+            </div>
+        </div>
+        <div class="reproductor">
+            <div class="informacion">
+                <div class="panel">
+                    <div class="cabeceraPanel">Información</div>
+                    <div class="listaPanel" id="listaInformacion">
+                        <img id="imagenListaInformacion" src="./images/Default.jpeg" alt=""/>
+                        <div id="nombreCancionListaInformacion">Nombre:</div>
+                        <div id="nombreArtistaListaInformacion">Artista:</div>
+                    </div>
+                </div>
+                </div>
+            <div class="controles">
+                <i class="bi bi-skip-start-btn" id="botonAnterior"></i>
+                <i class="bi bi-play-btn" id="botonReproducir"></i>
+                <i class="bi bi-skip-end-btn" id="botonSiguiente"></i>
+                <i class="bi bi-pause-btn" id="botonPausa"></i>
+                <i class="bi bi-volume-mute" id="botonSilenciar"></i>
+            </div>
+        </div>
+        <div class="listaDeReproduccion">
+            <div class="panel">
+                <div class="cabeceraPanel">Lista de reproducción</div>
+                <div class="listaPanel" id="listaReproduccion"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/main.js"></script>
+</body>
+</html>
