@@ -20,7 +20,12 @@
 }
 
 .catalogo {
-    height: calc(100%);
+    height: calc(100%-40px);
+}
+.filtro {
+    height: 40px;
+    background-color: darkgrey;
+    padding-bottom:0px;
 }
 
 .favoritos {
@@ -44,11 +49,12 @@
 .informacion {
     height: calc(100% - 40px);
     text-align: center;
+    font-size: 20px;
 }
 
-#imagenListaInformacion{
-    height: 250px;
-    width: 350px;
+#listaInformacionImagen{
+    height: 150px;
+    width: 210px;
     border:1px black solid;
     margin:auto;
     display: block;

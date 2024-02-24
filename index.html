@@ -12,13 +12,18 @@
         <h1 class="cabecera">Reproductor de música</h1>
         <div class="catalogo">
             <div class="panel">
-                <div class="cabeceraPanel">Catálogo de canciones <i class="bi bi-collection-play" id="botonReproducirListaCanciones"></i></div>
+                <div class="cabeceraPanel">Catálogo de canciones</div>
                 <div class="listaPanel" id="listaCanciones"></div>
-            </div>
+                <div class="filtro">Filtar la lista
+                    <input type="text" id="catalogoTextoFiltroCanciones" title="nombre del artista, canción o género">
+                    <i class="bi bi-search" id="catalogoBotonFiltroCanciones"></i>
+                    <i class="bi bi-arrow-repeat" id="catalogoBotonRestablecerCanciones"></i>
+                </div>
+                </div>
         </div>
         <div class="favoritos">
-            <div class="panel">
-                <div class="cabeceraPanel">Favoritos <i class="bi bi-collection-play" id="botonReproducirListaFavoritos"></i></div>
+            <div class="panel"> 
+                <div class="cabeceraPanel">Favoritos</div>
                 <div class="listaPanel" id="listaFavoritos"></div>
             </div>
         </div>
@@ -27,18 +32,21 @@
                 <div class="panel">
                     <div class="cabeceraPanel">Información</div>
                     <div class="listaPanel" id="listaInformacion">
-                        <img id="imagenListaInformacion" src="./images/Default.jpeg" alt=""/>
-                        <div id="nombreCancionListaInformacion">Nombre:</div>
-                        <div id="nombreArtistaListaInformacion">Artista:</div>
+                        <img id="listaInformacionImagen" src="./images/Default.jpeg" alt=""/>
+                        <div id="listaInformacionNombreCancion">Nombre:</div>
+                        <div id="listaInformacionNombreArtista">Artista:</div>
+                        <div id="listaInformacionGenero">Género:</div>
+                        <div id="listaInformacionNombreAnio">Año:</div>
+                        <div id="listaInformacionDuracion">Duración:</div>
                     </div>
                 </div>
                 </div>
             <div class="controles">
-                <i class="bi bi-skip-start-btn" id="botonAnterior"></i>
-                <i class="bi bi-play-btn" id="botonReproducir"></i>
-                <i class="bi bi-skip-end-btn" id="botonSiguiente"></i>
-                <i class="bi bi-pause-btn" id="botonPausa"></i>
-                <i class="bi bi-volume-mute" id="botonSilenciar"></i>
+                <i class="bi bi-skip-start-btn" id="reproductorBotonAnterior"></i>
+                <i class="bi bi-skip-end-btn" id="reproductorBotonSiguiente"></i>
+                <i class="bi bi-pause-btn" id="reproductorBotonPausa"></i>
+                <i class="bi bi-play-btn" id="reproductorBotonReproducir"></i>
+                <i class="bi bi-volume-mute" id="reproductorBotonSilenciar"></i>
             </div>
         </div>
         <div class="listaDeReproduccion">
